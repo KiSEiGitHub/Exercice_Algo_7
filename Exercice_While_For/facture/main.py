@@ -17,8 +17,8 @@ def main():
         print('Pas assez de produit')
         user_product = int(input('Combien de produit voulez-vous ? >> '))
 
-    HT = (product_price / 1.2) * user_product
-    TVA = (product_price / 100 * 20) * user_product
+    HT = product_price * user_product
+    TVA = HT * 0.2
     TTC = HT + TVA
 
     print('-' * 50)
